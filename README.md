@@ -96,7 +96,7 @@ The original remote control uses a linear B50K potentiometer RV1. Resistor R201 
 
 The *CambridgeSoundWorksDigitalIRRemote* uses a digital, 100-steps, linear potentiometer with 10K (because I had no 50K). To get a similar non linear behaviour (Green line) and to ensures that my digital potentiometer did not get more then the allowed 5 V, I had to lower the resistors:
 - R200 to 1K
-- R201 to 5K
+- R201 to 5K1
 - R202 to 2K
 
 ### Sony RM-ED011
