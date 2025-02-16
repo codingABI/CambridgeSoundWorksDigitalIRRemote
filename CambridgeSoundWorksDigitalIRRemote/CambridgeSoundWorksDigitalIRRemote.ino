@@ -60,14 +60,14 @@
 #include <avr/sleep.h>
 
 // Pin definitions
-#define AMPLIFIER_PIN 5 // Pin to turn on the amplifier with an optocoupler
+#define AMPLIFIER_PIN 5 // Pin to turn on/off the amplifier with an optocoupler
 #define INC_PIN 2 // INC pin for the digital potentiometer
 #define UD_PIN 1 // UP/DOWN pin for the digital potentiometer
 #define IRRX_PIN  0 // IR receiver pin
 
 // Max volume levels minus one for digital potentiometer x9c103 
 #define MAXVOLUME 99
-// Accept IR signals only when IRDEADTIMEMS has elapsed to prevent bouncing and too fast signals
+// Accept IR signals only after IRDEADTIMEMS has expired to avoid bouncing and too frequent signals
 #define IRDEADTIMEMS 200
 // Startaddress in EEPROM for permanent settings
 #define EEPROMADDR_START 0
