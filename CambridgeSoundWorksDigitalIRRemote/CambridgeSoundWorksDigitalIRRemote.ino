@@ -188,7 +188,7 @@ void loop() {
   if (IrReceiver.decode()) {
     IrReceiver.resume(); // Enable receiving of the next value
 
-    if (millis()-lastIRSignalMS > IRDEADTIMEMS) { // Debouce
+    if (millis()-lastIRSignalMS > IRDEADTIMEMS) { // Debounce
       switch ((IrReceiver.decodedIRData.address << 8) + IrReceiver.decodedIRData.command) {
         case 0x971C: // >> Volume up
           if (!g_amplifierEnabled) break;
