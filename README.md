@@ -184,7 +184,7 @@ My Digispark clone uses pin 5 as a reset pin. To use this pin as an I/O pin I ha
 
 ```
 hardware\tools\avr\bin\avrdude.exe -P com4 -C hardware\tools\avr\etc\avrdude.conf -b 19200 -c avrisp -p attiny85 -n
-hardware\tools\avr\bin\avrdude.exe -P com4 -C hardware\tools\avr\etc\avrdude.conf -b 19200 -p attiny85 -c avrisp -U hfuse:w:0x5F:m 
+hardware\tools\avr\bin\avrdude.exe -P com4 -C hardware\tools\avr\etc\avrdude.conf -b 19200 -c avrisp -p attiny85 -U hfuse:w:0x5F:m 
 ```
 
 > [!WARNING]
